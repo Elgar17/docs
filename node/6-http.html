@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>http模块 | E-NOTE ✍</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/dist/favicon.ico">
+    <meta name="description" content="前端笔记">
+    
+    <link rel="preload" href="/dist/assets/css/0.styles.c52ccf13.css" as="style"><link rel="preload" href="/dist/assets/js/app.00e7a9b9.js" as="script"><link rel="preload" href="/dist/assets/js/2.46bcd291.js" as="script"><link rel="preload" href="/dist/assets/js/20.a6d49842.js" as="script"><link rel="prefetch" href="/dist/assets/js/10.d85b1990.js"><link rel="prefetch" href="/dist/assets/js/11.7a8af923.js"><link rel="prefetch" href="/dist/assets/js/12.331dfc49.js"><link rel="prefetch" href="/dist/assets/js/13.462e24d9.js"><link rel="prefetch" href="/dist/assets/js/14.202e9254.js"><link rel="prefetch" href="/dist/assets/js/15.9ddad2aa.js"><link rel="prefetch" href="/dist/assets/js/16.dbbde697.js"><link rel="prefetch" href="/dist/assets/js/17.9a65bf0a.js"><link rel="prefetch" href="/dist/assets/js/18.2e1f4900.js"><link rel="prefetch" href="/dist/assets/js/19.3879040c.js"><link rel="prefetch" href="/dist/assets/js/21.6e4f6602.js"><link rel="prefetch" href="/dist/assets/js/22.b9f661da.js"><link rel="prefetch" href="/dist/assets/js/23.1d626773.js"><link rel="prefetch" href="/dist/assets/js/24.ac0ac80a.js"><link rel="prefetch" href="/dist/assets/js/25.59fbd9a9.js"><link rel="prefetch" href="/dist/assets/js/26.60cf460d.js"><link rel="prefetch" href="/dist/assets/js/27.3e5c20bf.js"><link rel="prefetch" href="/dist/assets/js/28.fac31c18.js"><link rel="prefetch" href="/dist/assets/js/29.5083ef31.js"><link rel="prefetch" href="/dist/assets/js/3.5ca081e6.js"><link rel="prefetch" href="/dist/assets/js/4.3e0b4ebd.js"><link rel="prefetch" href="/dist/assets/js/5.2684461c.js"><link rel="prefetch" href="/dist/assets/js/6.7e8f81d5.js"><link rel="prefetch" href="/dist/assets/js/7.1271e9af.js"><link rel="prefetch" href="/dist/assets/js/8.62ed5eb7.js"><link rel="prefetch" href="/dist/assets/js/9.acfc41e2.js">
+    <link rel="stylesheet" href="/dist/assets/css/0.styles.c52ccf13.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/dist/" class="home-link router-link-active"><!----> <span class="site-name">E-NOTE ✍</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/dist/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/dist/html-css/" class="nav-link">
+  HTML-CSS
+</a></div><div class="nav-item"><a href="/dist/javascript/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/dist/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/dist/node/" class="nav-link router-link-active">
+  Node.js
+</a></div><div class="nav-item"><a href="/dist/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="https://github.com/elgar17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/dist/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/dist/html-css/" class="nav-link">
+  HTML-CSS
+</a></div><div class="nav-item"><a href="/dist/javascript/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/dist/vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/dist/node/" class="nav-link router-link-active">
+  Node.js
+</a></div><div class="nav-item"><a href="/dist/other/" class="nav-link">
+  其他
+</a></div><div class="nav-item"><a href="https://github.com/elgar17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Node</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/dist/node/" aria-current="page" class="sidebar-link">Node.js 入门篇</a></li><li><a href="/dist/node/1-install.html" class="sidebar-link">安装</a></li><li><a href="/dist/node/2-global.html" class="sidebar-link">全局对象(global)</a></li><li><a href="/dist/node/3-loop.html" class="sidebar-link">Event loop</a></li><li><a href="/dist/node/4-npm.html" class="sidebar-link">npm 与 包管理</a></li><li><a href="/dist/node/6-http.html" aria-current="page" class="active sidebar-link">http模块</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/dist/node/6-http.html#get-请求" class="sidebar-link">get 请求</a></li><li class="sidebar-sub-header"><a href="/dist/node/6-http.html#post-请求" class="sidebar-link">post 请求</a></li><li class="sidebar-sub-header"><a href="/dist/node/6-http.html#路由的处理" class="sidebar-link">路由的处理</a></li><li class="sidebar-sub-header"><a href="/dist/node/6-http.html#querystring-模块" class="sidebar-link">querystring 模块</a></li></ul></li><li><a href="/dist/node/7-stream.html" class="sidebar-link">stream</a></li><li><a href="/dist/node/8-security.html" class="sidebar-link">security(安全)</a></li><li><a href="/dist/node/9-node-blog.html" class="sidebar-link">博客项目</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="http模块"><a href="#http模块" class="header-anchor">#</a> http模块</h1> <p>http模块是 node 自带的所以我们为您不需要下载其他依赖，直接是要弄即可。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 引入http模块</span>
+<span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 创建一个服务 req 用户发送的请求， res 是服务器发给用户的响应</span>
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 服务监听 8000端口</span>
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8000</span><span class="token punctuation">)</span>
+</code></pre></div><p>访问 http://localhost:8000/ 可以获得 hello 的字符串。</p> <h2 id="get-请求"><a href="#get-请求" class="header-anchor">#</a> get 请求</h2> <p>当服务端发来请求以后，我们可通过 req 来获取具体的请求内容。</p> <p>req 有以下常用属性：</p> <p>req.method：请求方法（GET/POST等）</p> <p>req.url：请求路径（如：index.html?name=tom&amp;age=18）</p> <p>这里用到 querystring 模块，下面有介绍，先看一下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> http <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'http'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> querystring <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'querystring'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 创建一个服务 req 用户发送的请求， res 是服务器发给用户的响应</span>
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url
+    req<span class="token punctuation">.</span>query <span class="token operator">=</span> querystring<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>url<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token comment">// 将 url 中参数部分转成对象</span>
+    res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 服务监听 8000端口</span>
+server<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">8000</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="post-请求"><a href="#post-请求" class="header-anchor">#</a> post 请求</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>req<span class="token punctuation">.</span>method <span class="token operator">==</span> <span class="token string">'POST'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 显示发来的数据格式</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>header<span class="token punctuation">[</span><span class="token string">'content-type'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token comment">// 监听data </span>
+        <span class="token keyword">let</span> data <span class="token operator">=</span> <span class="token string">''</span>
+        <span class="token comment">// 监听发来的post数据 写入data中</span>
+        <span class="token comment">// chunk是二进制数据</span>
+        res<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token parameter">chunk</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            data <span class="token operator">+=</span> chunk<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token comment">// end事件在post完成之后出发</span>
+        res<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="路由的处理"><a href="#路由的处理" class="header-anchor">#</a> 路由的处理</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> path <span class="token operator">=</span> req<span class="token punctuation">.</span>url<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">&quot;?&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="querystring-模块"><a href="#querystring-模块" class="header-anchor">#</a> querystring 模块</h2> <p>这里会使用一个 querystring 的模块来处理 get 请求的参数。</p> <p>querystring.parse(str)方法</p> <p>传入字符串，返回一个对象。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 加载模块</span>
+<span class="token keyword">const</span> querystring <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'querystring'</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>querystring<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token string">'name=tom&amp;age=18'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">// 返回对象： {name: &quot;tom&quot;, age: '18'}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/dist/node/4-npm.html" class="prev">
+        npm 与 包管理
+      </a></span> <span class="next"><a href="/dist/node/7-stream.html">
+        stream
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/dist/assets/js/app.00e7a9b9.js" defer></script><script src="/dist/assets/js/2.46bcd291.js" defer></script><script src="/dist/assets/js/20.a6d49842.js" defer></script>
+  </body>
+</html>
