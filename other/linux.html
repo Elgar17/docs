@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 入门教程 | E-NOTE ✍</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/docs/favicon.png">
+    <script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?fc5ff755829e74db29f25cb68a49a4e1";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();</script>
+    <meta name="description" content="前端笔记">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.4a313102.css" as="style"><link rel="preload" href="/docs/assets/js/app.0195529f.js" as="script"><link rel="preload" href="/docs/assets/js/2.614e992d.js" as="script"><link rel="preload" href="/docs/assets/js/84.98972dbe.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.7e46af9c.js"><link rel="prefetch" href="/docs/assets/js/11.9fcb09db.js"><link rel="prefetch" href="/docs/assets/js/12.1b95224d.js"><link rel="prefetch" href="/docs/assets/js/13.f58469a8.js"><link rel="prefetch" href="/docs/assets/js/14.e66e8811.js"><link rel="prefetch" href="/docs/assets/js/15.cf236602.js"><link rel="prefetch" href="/docs/assets/js/16.fcbf2023.js"><link rel="prefetch" href="/docs/assets/js/17.c763361e.js"><link rel="prefetch" href="/docs/assets/js/18.58f15943.js"><link rel="prefetch" href="/docs/assets/js/19.cdc2ca9c.js"><link rel="prefetch" href="/docs/assets/js/20.2ba739dd.js"><link rel="prefetch" href="/docs/assets/js/21.528fdc10.js"><link rel="prefetch" href="/docs/assets/js/22.39dc5127.js"><link rel="prefetch" href="/docs/assets/js/23.c926dcaa.js"><link rel="prefetch" href="/docs/assets/js/24.b56f9339.js"><link rel="prefetch" href="/docs/assets/js/25.0338303a.js"><link rel="prefetch" href="/docs/assets/js/26.6a204fd8.js"><link rel="prefetch" href="/docs/assets/js/27.4d4fc93a.js"><link rel="prefetch" href="/docs/assets/js/28.66049179.js"><link rel="prefetch" href="/docs/assets/js/29.fb33332e.js"><link rel="prefetch" href="/docs/assets/js/3.e80f5cbf.js"><link rel="prefetch" href="/docs/assets/js/30.a491b7e1.js"><link rel="prefetch" href="/docs/assets/js/31.b7b28b41.js"><link rel="prefetch" href="/docs/assets/js/32.cc12c312.js"><link rel="prefetch" href="/docs/assets/js/33.04c0706b.js"><link rel="prefetch" href="/docs/assets/js/34.4b9e8592.js"><link rel="prefetch" href="/docs/assets/js/35.9d3484bc.js"><link rel="prefetch" href="/docs/assets/js/36.c379ce3a.js"><link rel="prefetch" href="/docs/assets/js/37.f991d7fa.js"><link rel="prefetch" href="/docs/assets/js/38.6c1bb460.js"><link rel="prefetch" href="/docs/assets/js/39.4eb76f6a.js"><link rel="prefetch" href="/docs/assets/js/4.dda371ea.js"><link rel="prefetch" href="/docs/assets/js/40.f18d116d.js"><link rel="prefetch" href="/docs/assets/js/41.e61ff8eb.js"><link rel="prefetch" href="/docs/assets/js/42.101f7acc.js"><link rel="prefetch" href="/docs/assets/js/43.7df4299b.js"><link rel="prefetch" href="/docs/assets/js/44.3e5b7236.js"><link rel="prefetch" href="/docs/assets/js/45.6c66a451.js"><link rel="prefetch" href="/docs/assets/js/46.901827c3.js"><link rel="prefetch" href="/docs/assets/js/47.8d813062.js"><link rel="prefetch" href="/docs/assets/js/48.3677a9ff.js"><link rel="prefetch" href="/docs/assets/js/49.190f0a8a.js"><link rel="prefetch" href="/docs/assets/js/5.9e0195bc.js"><link rel="prefetch" href="/docs/assets/js/50.8c9cf462.js"><link rel="prefetch" href="/docs/assets/js/51.f616ae3b.js"><link rel="prefetch" href="/docs/assets/js/52.fa97af50.js"><link rel="prefetch" href="/docs/assets/js/53.7ef866f9.js"><link rel="prefetch" href="/docs/assets/js/54.6c5990b9.js"><link rel="prefetch" href="/docs/assets/js/55.1c45d66d.js"><link rel="prefetch" href="/docs/assets/js/56.999e71c8.js"><link rel="prefetch" href="/docs/assets/js/57.0cf0b43b.js"><link rel="prefetch" href="/docs/assets/js/58.ddf4b506.js"><link rel="prefetch" href="/docs/assets/js/59.c1f8881a.js"><link rel="prefetch" href="/docs/assets/js/6.d09cb291.js"><link rel="prefetch" href="/docs/assets/js/60.be169efa.js"><link rel="prefetch" href="/docs/assets/js/61.4f98a70c.js"><link rel="prefetch" href="/docs/assets/js/62.5ba4329e.js"><link rel="prefetch" href="/docs/assets/js/63.92d051bd.js"><link rel="prefetch" href="/docs/assets/js/64.7ef5035a.js"><link rel="prefetch" href="/docs/assets/js/65.237068ed.js"><link rel="prefetch" href="/docs/assets/js/66.71b1514d.js"><link rel="prefetch" href="/docs/assets/js/67.ab02fcb6.js"><link rel="prefetch" href="/docs/assets/js/68.ed54dd62.js"><link rel="prefetch" href="/docs/assets/js/69.b10a307e.js"><link rel="prefetch" href="/docs/assets/js/7.ea348143.js"><link rel="prefetch" href="/docs/assets/js/70.ce97b0b7.js"><link rel="prefetch" href="/docs/assets/js/71.33945ac9.js"><link rel="prefetch" href="/docs/assets/js/72.6a36768f.js"><link rel="prefetch" href="/docs/assets/js/73.e88f87e8.js"><link rel="prefetch" href="/docs/assets/js/74.53379524.js"><link rel="prefetch" href="/docs/assets/js/75.873e6af5.js"><link rel="prefetch" href="/docs/assets/js/76.4771f006.js"><link rel="prefetch" href="/docs/assets/js/77.cb70a7dd.js"><link rel="prefetch" href="/docs/assets/js/78.0c21e6d7.js"><link rel="prefetch" href="/docs/assets/js/79.dc040f26.js"><link rel="prefetch" href="/docs/assets/js/8.7c739750.js"><link rel="prefetch" href="/docs/assets/js/80.dee1f437.js"><link rel="prefetch" href="/docs/assets/js/81.77c4a301.js"><link rel="prefetch" href="/docs/assets/js/82.de8884fb.js"><link rel="prefetch" href="/docs/assets/js/83.c0fb90b2.js"><link rel="prefetch" href="/docs/assets/js/85.0e28cb65.js"><link rel="prefetch" href="/docs/assets/js/86.f1fcf120.js"><link rel="prefetch" href="/docs/assets/js/87.6807da11.js"><link rel="prefetch" href="/docs/assets/js/88.6fb44a5e.js"><link rel="prefetch" href="/docs/assets/js/89.b2729a2a.js"><link rel="prefetch" href="/docs/assets/js/9.e3c05170.js"><link rel="prefetch" href="/docs/assets/js/90.4c29c81e.js"><link rel="prefetch" href="/docs/assets/js/91.c841320c.js"><link rel="prefetch" href="/docs/assets/js/92.6d652d2f.js"><link rel="prefetch" href="/docs/assets/js/93.f66c7cba.js"><link rel="prefetch" href="/docs/assets/js/94.643b506d.js"><link rel="prefetch" href="/docs/assets/js/95.9d62507a.js"><link rel="prefetch" href="/docs/assets/js/96.36f31c61.js"><link rel="prefetch" href="/docs/assets/js/97.0f6b32d4.js"><link rel="prefetch" href="/docs/assets/js/98.1cc85d25.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.4a313102.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">E-NOTE ✍</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/html-css/" class="nav-link">
+  HTML-CSS
+</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link">
+  Vue.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/linux.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/" class="nav-link router-link-active">
+  运维
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="周围技术" class="dropdown-title"><span class="title">周围技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="周围技术" class="mobile-dropdown-title"><span class="title">周围技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/alg/" class="nav-link">
+  算法篇
+</a></li><li class="dropdown-item"><!----> <a href="/docs/network/" class="nav-link">
+  网络篇
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/elgar17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/html-css/" class="nav-link">
+  HTML-CSS
+</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link">
+  Vue.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/docs/node/" class="nav-link">
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/linux.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/" class="nav-link router-link-active">
+  运维
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="周围技术" class="dropdown-title"><span class="title">周围技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="周围技术" class="mobile-dropdown-title"><span class="title">周围技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/alg/" class="nav-link">
+  算法篇
+</a></li><li class="dropdown-item"><!----> <a href="/docs/network/" class="nav-link">
+  网络篇
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/elgar17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Linux </span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/other/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/docs/other/linux.html" aria-current="page" class="active sidebar-link">Linux 入门教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/other/linux.html#_1、linux-目录结构" class="sidebar-link">1、linux 目录结构</a></li><li class="sidebar-sub-header"><a href="/docs/other/linux.html#_2、文件操作" class="sidebar-link">2、文件操作</a></li><li class="sidebar-sub-header"><a href="/docs/other/linux.html#_3、下载-压缩-解压" class="sidebar-link">3、下载/压缩/解压</a></li><li class="sidebar-sub-header"><a href="/docs/other/linux.html#_4、进程管理" class="sidebar-link">4、进程管理</a></li><li class="sidebar-sub-header"><a href="/docs/other/linux.html#_5、防火墙" class="sidebar-link">5、防火墙</a></li></ul></li><li><a href="/docs/other/shell.html" class="sidebar-link">shell 入门</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>运维</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="linux-入门教程"><a href="#linux-入门教程" class="header-anchor">#</a> Linux 入门教程</h1> <p>Linux 是像 windows 一样的系统。因为它对硬件的要求很低，开源免费，收到很多人的喜欢。</p> <p><img src="linux.png" alt="Linux教程"></p> <p>下面介绍一下内容:</p> <ul><li>介绍 Linux 目录结构</li> <li>文件的创建，修改，移动等操作</li> <li>文件的 下载/压缩/解压</li></ul> <h2 id="_1、linux-目录结构"><a href="#_1、linux-目录结构" class="header-anchor">#</a> 1、linux 目录结构</h2> <p><code>/</code> 目录是根目录，所有文件都在此目录下。查看根目录：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> / <span class="token comment"># 进入根目录</span>
+<span class="token function">ls</span> / <span class="token comment"># 查看根目录</span>
+</code></pre></div><p>查看根目录，会显示以下文件目录，Linux 没有盘的概念，一切文件都在一个区域。</p> <ul><li><p><strong>home： 个人目录</strong></p></li> <li><p><strong>etc：</strong> <strong>软件配置文件</strong></p></li> <li><p>sys：系统目录</p></li> <li><p>bin：存放常用命令</p></li> <li><p>boot ：Linux 核心文件</p></li> <li><p>dev ：外部设备，比如U盘等</p></li> <li><p>lib ：共享库文件</p></li> <li><p>lost+found  ：存放突然关机的文件</p></li> <li><p>mnt ：临时存放的文件，光驱等。</p></li> <li><p><strong>opt ：存放用户安装的软件，默认是空的</strong></p></li> <li><p><strong>root  ：系统管理员目录</strong></p></li> <li><p>sbin ：超级管理员</p></li> <li><p>srv : 存放启动之后需要提取的数据</p></li> <li><p><strong>tmp : 存放一些临时的文件，比如安装包等</strong></p></li> <li><p><strong>usr          --&gt; 用户存放可执行文件（里面的 sbin 目录存放超级管理员）</strong></p></li> <li><p><strong>var          --&gt; 日志文件</strong></p></li> <li><p><strong>usr/src：存放内核源代码</strong></p></li> <li><p><strong>www：存放服务器相关的资源，环境，项目等</strong></p></li></ul> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>当终端显示当前目录为 <code>~</code>是，表示当前用户的主目录。比如说，用root 用户登陆后，用 <code>cd /home</code> 就会显示<code>~</code>。</p> <p>普通用户的目录文件夹在 <code>/user</code> 目录下。</p></div> <h2 id="_2、文件操作"><a href="#_2、文件操作" class="header-anchor">#</a> 2、文件操作</h2> <p><strong>（1）常用查看硬件参数的命令：</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看内核</span>
+<span class="token function">uname</span> -a
+
+<span class="token comment"># 查看磁盘空间</span>
+<span class="token function">df</span> -Th
+
+<span class="token comment"># 查看运行的进程（相当于win10的资源管理器）</span>
+<span class="token function">top</span>
+</code></pre></div><p><strong>（2）创建目录，文件</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 创建目录</span>
+<span class="token function">mkdir</span> <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+
+<span class="token comment"># 创建文件</span>
+<span class="token function">touch</span> <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+<span class="token comment"># 创建并且打开文件</span>
+<span class="token function">vim</span> <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+<span class="token comment"># 如果 a 文件存在，会覆盖文件</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'hello world'</span> <span class="token operator">&gt;</span> <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+<span class="token comment"># 文件中添加一行（追加）</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'hello'</span> <span class="token operator">&gt;&gt;</span> text.txt
+</code></pre></div><p><strong>（3）删除目录，文件</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 删除目录 testdir</span>
+<span class="token function">rm</span> -r <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+<span class="token function">rmdir</span> -p <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+
+<span class="token comment"># 彻底删除</span>
+<span class="token function">rm</span> -rf <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+
+<span class="token comment"># 删除文件 text.txt</span>
+<span class="token function">rm</span> <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
+</code></pre></div><p><strong>（4）查看命令</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看目录</span>
+<span class="token function">ls</span>
+<span class="token comment"># 包括隐藏目录</span>
+<span class="token function">ls</span> -a
+<span class="token comment"># 带有操作的权限，文件的信息</span>
+<span class="token function">ls</span> -la
+<span class="token comment"># 查看当前的路径</span>
+<span class="token builtin class-name">pwd</span>
+</code></pre></div><p><strong>（5）移动，重命名，复制文件</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 文件 foo 重命名为 bar</span>
+<span class="token function">mv</span> foo.txt bar.txt
+
+<span class="token comment"># 移动文件到 home 目录下</span>
+<span class="token function">mv</span> foo.txt /home
+
+<span class="token comment"># 复制文件到 home 目录下</span>
+<span class="token function">mv</span> foo.txt /home
+</code></pre></div><h2 id="_3、下载-压缩-解压"><a href="#_3、下载-压缩-解压" class="header-anchor">#</a> 3、下载/压缩/解压</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 下载 </span>
+<span class="token function">wget</span> <span class="token punctuation">[</span>下载地址<span class="token punctuation">]</span>
+yum -y <span class="token function">install</span> <span class="token punctuation">[</span>包名<span class="token punctuation">]</span>
+
+<span class="token comment"># 解压</span>
+<span class="token function">tar</span> zxvf <span class="token punctuation">[</span>文件名<span class="token punctuation">]</span>
+
+<span class="token comment"># 压缩 </span>
+<span class="token function">tar</span> zcvf <span class="token punctuation">[</span>压缩生成的文件名<span class="token punctuation">]</span>  <span class="token punctuation">[</span>压缩的文件名<span class="token punctuation">]</span>
+
+<span class="token comment"># 上传文件: 使用 xshell 等工具，输入此命令选择文件上传到所在目录</span>
+rz
+</code></pre></div><h2 id="_4、进程管理"><a href="#_4、进程管理" class="header-anchor">#</a> 4、进程管理</h2> <div class="language- extra-class"><pre class="language-text"><code># 查看进程
+ps
+</code></pre></div><p>参数：</p> <ul><li><p><code>-a</code> ： 显示当前用户的运行的所有进程</p></li> <li><p><code>-u</code> ： 以用户进程运行的信息</p></li></ul> <h2 id="_5、防火墙"><a href="#_5、防火墙" class="header-anchor">#</a> 5、防火墙</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看状态</span>
+systemctl status firewalld
+
+<span class="token comment"># 重启</span>
+servise firewalld start
+
+<span class="token comment"># 停止</span>
+servise firewalld stop 
+
+<span class="token comment"># 开启端口</span>
+firewall-cmd --zone<span class="token operator">=</span>public --add--port<span class="token operator">=</span><span class="token number">8080</span>/tcp --permanent
+
+<span class="token comment"># 重启</span>
+systemctl restart firewalld.servise
+
+<span class="token comment"># 参数说明</span>
+--zone <span class="token comment"># 作用域</span>
+--add-port<span class="token operator">=</span><span class="token number">80</span>/tcp <span class="token comment"># 添加的端口</span>
+--permanent <span class="token comment"># 永久生效</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/other/" class="prev router-link-active">
+        目录
+      </a></span> <span class="next"><a href="/docs/other/shell.html">
+        shell 入门
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.0195529f.js" defer></script><script src="/docs/assets/js/2.614e992d.js" defer></script><script src="/docs/assets/js/84.98972dbe.js" defer></script>
+  </body>
+</html>
