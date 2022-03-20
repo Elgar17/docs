@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker 教程 | 前端到全栈</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/docs/favicon.png">
+    <script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?fc5ff755829e74db29f25cb68a49a4e1";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();</script>
+    <meta name="description" content="专注于 Vue 和 Go 语言">
+    <meta name="baidu-site-verification" content="code-qGZsGsi6Kf">
+    <meta name="keywords" content="专注于 Vue 和 Go 语言">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.7d65f6b6.css" as="style"><link rel="preload" href="/docs/assets/js/app.8b7e38aa.js" as="script"><link rel="preload" href="/docs/assets/js/2.8fb7c0a3.js" as="script"><link rel="preload" href="/docs/assets/js/132.4428187f.js" as="script"><link rel="preload" href="/docs/assets/js/6.521866e2.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.d693d795.js"><link rel="prefetch" href="/docs/assets/js/100.74a35bb8.js"><link rel="prefetch" href="/docs/assets/js/101.03145afd.js"><link rel="prefetch" href="/docs/assets/js/102.6833d0c9.js"><link rel="prefetch" href="/docs/assets/js/103.1b1929d9.js"><link rel="prefetch" href="/docs/assets/js/104.7ed897d9.js"><link rel="prefetch" href="/docs/assets/js/105.726d29ba.js"><link rel="prefetch" href="/docs/assets/js/106.821842f0.js"><link rel="prefetch" href="/docs/assets/js/107.32bd0dc4.js"><link rel="prefetch" href="/docs/assets/js/108.f005351a.js"><link rel="prefetch" href="/docs/assets/js/109.63869d94.js"><link rel="prefetch" href="/docs/assets/js/11.bc750cf5.js"><link rel="prefetch" href="/docs/assets/js/110.79cf142c.js"><link rel="prefetch" href="/docs/assets/js/111.8de910c6.js"><link rel="prefetch" href="/docs/assets/js/112.49f09cfb.js"><link rel="prefetch" href="/docs/assets/js/113.5ba4f187.js"><link rel="prefetch" href="/docs/assets/js/114.6d0bbeb4.js"><link rel="prefetch" href="/docs/assets/js/115.b18bf29c.js"><link rel="prefetch" href="/docs/assets/js/116.0559c260.js"><link rel="prefetch" href="/docs/assets/js/117.486c9826.js"><link rel="prefetch" href="/docs/assets/js/118.c69aa1f3.js"><link rel="prefetch" href="/docs/assets/js/119.d7235c1e.js"><link rel="prefetch" href="/docs/assets/js/12.89487690.js"><link rel="prefetch" href="/docs/assets/js/120.364db273.js"><link rel="prefetch" href="/docs/assets/js/121.4a07b44a.js"><link rel="prefetch" href="/docs/assets/js/122.b92cce73.js"><link rel="prefetch" href="/docs/assets/js/123.340e6150.js"><link rel="prefetch" href="/docs/assets/js/124.2f6fbcdc.js"><link rel="prefetch" href="/docs/assets/js/125.4dff295a.js"><link rel="prefetch" href="/docs/assets/js/126.d203584c.js"><link rel="prefetch" href="/docs/assets/js/127.e8a163bd.js"><link rel="prefetch" href="/docs/assets/js/128.ad16aaec.js"><link rel="prefetch" href="/docs/assets/js/129.0d2c3372.js"><link rel="prefetch" href="/docs/assets/js/13.cb91aad2.js"><link rel="prefetch" href="/docs/assets/js/130.8e2a987d.js"><link rel="prefetch" href="/docs/assets/js/131.6094d6ba.js"><link rel="prefetch" href="/docs/assets/js/133.e8c911cc.js"><link rel="prefetch" href="/docs/assets/js/134.f315588e.js"><link rel="prefetch" href="/docs/assets/js/135.e83db46b.js"><link rel="prefetch" href="/docs/assets/js/136.19527a90.js"><link rel="prefetch" href="/docs/assets/js/137.8a3f54e5.js"><link rel="prefetch" href="/docs/assets/js/138.dcb1281a.js"><link rel="prefetch" href="/docs/assets/js/139.ab7b4bf9.js"><link rel="prefetch" href="/docs/assets/js/14.67309ebc.js"><link rel="prefetch" href="/docs/assets/js/140.551c74b2.js"><link rel="prefetch" href="/docs/assets/js/141.93687699.js"><link rel="prefetch" href="/docs/assets/js/142.5e1cdce0.js"><link rel="prefetch" href="/docs/assets/js/143.5489e6ed.js"><link rel="prefetch" href="/docs/assets/js/144.5c7460e1.js"><link rel="prefetch" href="/docs/assets/js/145.bcd05ee4.js"><link rel="prefetch" href="/docs/assets/js/146.42f91ed3.js"><link rel="prefetch" href="/docs/assets/js/147.50f2574e.js"><link rel="prefetch" href="/docs/assets/js/148.a25cbebb.js"><link rel="prefetch" href="/docs/assets/js/149.c5b9f5bb.js"><link rel="prefetch" href="/docs/assets/js/15.6860abe2.js"><link rel="prefetch" href="/docs/assets/js/150.e7f3c1a8.js"><link rel="prefetch" href="/docs/assets/js/151.8a87f224.js"><link rel="prefetch" href="/docs/assets/js/152.ba384f27.js"><link rel="prefetch" href="/docs/assets/js/153.d311adb8.js"><link rel="prefetch" href="/docs/assets/js/154.c5564d9d.js"><link rel="prefetch" href="/docs/assets/js/155.7ad3c190.js"><link rel="prefetch" href="/docs/assets/js/156.8c9accb5.js"><link rel="prefetch" href="/docs/assets/js/157.8258bc6e.js"><link rel="prefetch" href="/docs/assets/js/158.e1c680a8.js"><link rel="prefetch" href="/docs/assets/js/159.45ef41c7.js"><link rel="prefetch" href="/docs/assets/js/16.e587c60e.js"><link rel="prefetch" href="/docs/assets/js/160.5644623d.js"><link rel="prefetch" href="/docs/assets/js/161.7a04d208.js"><link rel="prefetch" href="/docs/assets/js/17.e6ae59af.js"><link rel="prefetch" href="/docs/assets/js/18.2c205ee7.js"><link rel="prefetch" href="/docs/assets/js/19.c3bb03fc.js"><link rel="prefetch" href="/docs/assets/js/20.e14e6c94.js"><link rel="prefetch" href="/docs/assets/js/21.c90d5faa.js"><link rel="prefetch" href="/docs/assets/js/22.3835f02a.js"><link rel="prefetch" href="/docs/assets/js/23.01707247.js"><link rel="prefetch" href="/docs/assets/js/24.c8487c7c.js"><link rel="prefetch" href="/docs/assets/js/25.fbd3d82d.js"><link rel="prefetch" href="/docs/assets/js/26.eaba143d.js"><link rel="prefetch" href="/docs/assets/js/27.1dd7e004.js"><link rel="prefetch" href="/docs/assets/js/28.dc586aa6.js"><link rel="prefetch" href="/docs/assets/js/29.3704abce.js"><link rel="prefetch" href="/docs/assets/js/3.ee8ec2a3.js"><link rel="prefetch" href="/docs/assets/js/30.e2bd1c87.js"><link rel="prefetch" href="/docs/assets/js/31.5dce002a.js"><link rel="prefetch" href="/docs/assets/js/32.b859841b.js"><link rel="prefetch" href="/docs/assets/js/33.56e7470f.js"><link rel="prefetch" href="/docs/assets/js/34.254ae2b8.js"><link rel="prefetch" href="/docs/assets/js/35.c5cc6ef5.js"><link rel="prefetch" href="/docs/assets/js/36.55bd5d2d.js"><link rel="prefetch" href="/docs/assets/js/37.3140e53e.js"><link rel="prefetch" href="/docs/assets/js/38.24a6d6db.js"><link rel="prefetch" href="/docs/assets/js/39.2e96b2ef.js"><link rel="prefetch" href="/docs/assets/js/4.573c5cb6.js"><link rel="prefetch" href="/docs/assets/js/40.0c691084.js"><link rel="prefetch" href="/docs/assets/js/41.dff2d2a6.js"><link rel="prefetch" href="/docs/assets/js/42.be9931bb.js"><link rel="prefetch" href="/docs/assets/js/43.311a8ff9.js"><link rel="prefetch" href="/docs/assets/js/44.7fe301ca.js"><link rel="prefetch" href="/docs/assets/js/45.31ffe015.js"><link rel="prefetch" href="/docs/assets/js/46.f61aeeaf.js"><link rel="prefetch" href="/docs/assets/js/47.0ffa2d31.js"><link rel="prefetch" href="/docs/assets/js/48.37fe15f1.js"><link rel="prefetch" href="/docs/assets/js/49.ec630048.js"><link rel="prefetch" href="/docs/assets/js/5.98a35fcc.js"><link rel="prefetch" href="/docs/assets/js/50.87993929.js"><link rel="prefetch" href="/docs/assets/js/51.e32e439b.js"><link rel="prefetch" href="/docs/assets/js/52.f67a1e94.js"><link rel="prefetch" href="/docs/assets/js/53.a3f12acc.js"><link rel="prefetch" href="/docs/assets/js/54.31b96c02.js"><link rel="prefetch" href="/docs/assets/js/55.951bc575.js"><link rel="prefetch" href="/docs/assets/js/56.761ce1c2.js"><link rel="prefetch" href="/docs/assets/js/57.90cba3f4.js"><link rel="prefetch" href="/docs/assets/js/58.efcdaa2b.js"><link rel="prefetch" href="/docs/assets/js/59.f977759d.js"><link rel="prefetch" href="/docs/assets/js/60.5ae523fa.js"><link rel="prefetch" href="/docs/assets/js/61.b1c92853.js"><link rel="prefetch" href="/docs/assets/js/62.6de1d690.js"><link rel="prefetch" href="/docs/assets/js/63.8ad7d8ab.js"><link rel="prefetch" href="/docs/assets/js/64.4477392b.js"><link rel="prefetch" href="/docs/assets/js/65.5f7f1ced.js"><link rel="prefetch" href="/docs/assets/js/66.b4044879.js"><link rel="prefetch" href="/docs/assets/js/67.74d3c351.js"><link rel="prefetch" href="/docs/assets/js/68.06f94c46.js"><link rel="prefetch" href="/docs/assets/js/69.d02684ca.js"><link rel="prefetch" href="/docs/assets/js/7.199a4768.js"><link rel="prefetch" href="/docs/assets/js/70.662a30b9.js"><link rel="prefetch" href="/docs/assets/js/71.6aa03e3c.js"><link rel="prefetch" href="/docs/assets/js/72.11d5bdea.js"><link rel="prefetch" href="/docs/assets/js/73.9acfa598.js"><link rel="prefetch" href="/docs/assets/js/74.6cc46c89.js"><link rel="prefetch" href="/docs/assets/js/75.afe8433b.js"><link rel="prefetch" href="/docs/assets/js/76.8d65abb0.js"><link rel="prefetch" href="/docs/assets/js/77.ad7e4b91.js"><link rel="prefetch" href="/docs/assets/js/78.99cb42fc.js"><link rel="prefetch" href="/docs/assets/js/79.0a8a1b90.js"><link rel="prefetch" href="/docs/assets/js/8.1642aa7a.js"><link rel="prefetch" href="/docs/assets/js/80.787bee51.js"><link rel="prefetch" href="/docs/assets/js/81.994981a2.js"><link rel="prefetch" href="/docs/assets/js/82.618d870e.js"><link rel="prefetch" href="/docs/assets/js/83.d4ac82ec.js"><link rel="prefetch" href="/docs/assets/js/84.bad5e842.js"><link rel="prefetch" href="/docs/assets/js/85.532a545e.js"><link rel="prefetch" href="/docs/assets/js/86.1db3d21f.js"><link rel="prefetch" href="/docs/assets/js/87.6bc5963f.js"><link rel="prefetch" href="/docs/assets/js/88.1ef3e4ee.js"><link rel="prefetch" href="/docs/assets/js/89.68c17e1f.js"><link rel="prefetch" href="/docs/assets/js/9.9fdcba21.js"><link rel="prefetch" href="/docs/assets/js/90.948e7356.js"><link rel="prefetch" href="/docs/assets/js/91.7941b395.js"><link rel="prefetch" href="/docs/assets/js/92.b20ded7b.js"><link rel="prefetch" href="/docs/assets/js/93.3ea1c9c7.js"><link rel="prefetch" href="/docs/assets/js/94.526a5179.js"><link rel="prefetch" href="/docs/assets/js/95.98cff76a.js"><link rel="prefetch" href="/docs/assets/js/96.4ae276e4.js"><link rel="prefetch" href="/docs/assets/js/97.799395c2.js"><link rel="prefetch" href="/docs/assets/js/98.b507be23.js"><link rel="prefetch" href="/docs/assets/js/99.41e7c6ba.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.7d65f6b6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">前端到全栈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/html-css/" class="nav-link">
+  HTML-CSS
+</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link">
+  Vue.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/go/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/docs/go-web/" class="nav-link">
+  Go 网络编程
+</a></li><li class="dropdown-item"><!----> <a href="/docs/node/" class="nav-link">
+  Node.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法与数据结构" class="dropdown-title"><span class="title">算法与数据结构</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法与数据结构" class="mobile-dropdown-title"><span class="title">算法与数据结构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/alg/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/linux.html" class="nav-link">
+  算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/docs/sql/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/docker.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/nginx.html" class="nav-link">
+  Nginx
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/elgar17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/html-css/" class="nav-link">
+  HTML-CSS
+</a></li><li class="dropdown-item"><!----> <a href="/docs/javascript/" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/docs/vue/" class="nav-link">
+  Vue.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/go/" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/docs/go-web/" class="nav-link">
+  Go 网络编程
+</a></li><li class="dropdown-item"><!----> <a href="/docs/node/" class="nav-link">
+  Node.js
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="算法与数据结构" class="dropdown-title"><span class="title">算法与数据结构</span> <span class="arrow down"></span></button> <button type="button" aria-label="算法与数据结构" class="mobile-dropdown-title"><span class="title">算法与数据结构</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/alg/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/linux.html" class="nav-link">
+  算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/network/" class="nav-link">
+  网络
+</a></li><li class="dropdown-item"><!----> <a href="/docs/sql/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/redis.html" class="nav-link">
+  Redis
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/docker.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/docs/other/nginx.html" class="nav-link">
+  Nginx
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/elgar17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>其他</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/other/" aria-current="page" class="sidebar-link">目录</a></li><li><a href="/docs/other/linux.html" class="sidebar-link">Linux 入门教程</a></li><li><a href="/docs/other/shell.html" class="sidebar-link">shell 入门</a></li><li><a href="/docs/other/jwt.html" class="sidebar-link">用户鉴权 JWT 与 Session</a></li><li><a href="/docs/other/redis.html" class="sidebar-link">redis</a></li><li><a href="/docs/other/nginx.html" class="sidebar-link">Nginx 基本使用</a></li><li><a href="/docs/other/docker.html" aria-current="page" class="active sidebar-link">docker 教程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_1-基本组成" class="sidebar-link">1. 基本组成</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_2-linux-安装-docker" class="sidebar-link">2. linux 安装 docker</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_3-镜像命令" class="sidebar-link">3. 镜像命令</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_4-容器命令" class="sidebar-link">4. 容器命令</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_5-数据卷" class="sidebar-link">5. 数据卷</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_6-docker-compose" class="sidebar-link">6. docker-compose</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_7-进入容器-拷贝文件" class="sidebar-link">7. 进入容器，拷贝文件</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_8-docker-仓库" class="sidebar-link">8. docker 仓库</a></li><li class="sidebar-sub-header"><a href="/docs/other/docker.html#_9、卸载-docker-容器" class="sidebar-link">9、卸载 docker 容器</a></li></ul></li><li><a href="/docs/other/opencource.html" class="sidebar-link">如何做开源项目</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="docker-教程"><a href="#docker-教程" class="header-anchor">#</a> docker 教程</h1> <p>是一个容器化技术， 相当于一个虚拟机，比虚拟机清凉高效，可以秒启动。</p> <p>可以理解为简易的系统。</p> <p><img src="docker.png" alt="docker教程"></p> <p>官方文档：<a href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">https://docs.docker.com/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>镜像下载网站：<a href="https://hub.docker.com/" target="_blank" rel="noopener noreferrer">https://hub.docker.com/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><strong>docker 能做什么？</strong></p> <ul><li>对文件、资源、网络隔离</li> <li>变更管理、日志记录</li> <li>写时复制</li></ul> <h2 id="_1-基本组成"><a href="#_1-基本组成" class="header-anchor">#</a> 1. 基本组成</h2> <p>（1）image（镜像）</p> <p>mysql 安装包相当于一个镜像，还可以安装一个 Linux 系统。</p> <p>（2）container（容器）</p> <p>通过镜像运行的服务，一个镜像可以运行<strong>多个服务</strong>。</p> <p>（3）repository（仓库）</p> <p>存放镜像文件，分为私有和共有，docker hub 等。</p> <h2 id="_2-linux-安装-docker"><a href="#_2-linux-安装-docker" class="header-anchor">#</a> 2. linux 安装 docker</h2> <p>环境：CentOS 7 Linux</p> <p>一键安装，这是官方提供的脚本，第一行命令是，当前文件夹下载脚本，第二行是运行。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 这样下载也可以（推荐，一键安装）</span>
+<span class="token function">curl</span> -fsSL https://get.docker.com -o get-docker.sh
+<span class="token function">sh</span> get-docker.sh  
+
+<span class="token comment"># 启动</span>
+systemctl start docker
+</code></pre></div><p>可以跳过下面的（1 - 6）。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 1、查看运行状态</span>
+systemctl status docker
+</code></pre></div><p>如果之前安装过docker，先需要卸载旧的版本。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 2、卸载旧版本</span>
+yum remove docker <span class="token punctuation">\</span>
+            docker-client <span class="token punctuation">\</span>
+            docker-client-latest <span class="token punctuation">\</span>
+            docker-common <span class="token punctuation">\</span>
+            docker-latest <span class="token punctuation">\</span>
+            docker-latest-logrotate <span class="token punctuation">\</span>
+            docker-logrotate <span class="token punctuation">\</span>
+            docker-engine
+</code></pre></div><p>安装 <code>yum-utils</code> 包，设置下载镜像源</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 3、安装 yum 工具包</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y yum-utils
+
+<span class="token comment"># 4、设置阿里云镜像源</span>
+yum-config-manager <span class="token punctuation">\</span>
+    --add-repo <span class="token punctuation">\</span>
+  http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+
+<span class="token comment"># 5、安装 docker</span>
+yum <span class="token function">install</span> docker-ce docker-ce-cli containerd.io
+
+<span class="token comment"># 6、启动 docker </span>
+systemctl start docker
+</code></pre></div><p>启动之后，我们通过以下命令来查看运行状态，如果返回下面的内容说明安装成功：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看运行状态</span>
+systemctl status docker
+
+<span class="token comment"># 启动成功会显示以下的内容</span>
+● docker.service - Docker Application Container Engine
+   Loaded: loaded <span class="token punctuation">(</span>/usr/lib/systemd/system/docker.service<span class="token punctuation">;</span> disabled<span class="token punctuation">;</span> vendor preset: disabled<span class="token punctuation">)</span>
+   Active: active <span class="token punctuation">(</span>running<span class="token punctuation">)</span> since Tue <span class="token number">2021</span>-02-16 <span class="token number">11</span>:43:42 CST<span class="token punctuation">;</span> 17min ago
+     Docs: https://docs.docker.com
+ Main PID: <span class="token number">17592</span> <span class="token punctuation">(</span>dockerd<span class="token punctuation">)</span>
+    Tasks: <span class="token number">8</span>
+   Memory: <span class="token number">40</span>.9M
+   CGroup: /system.slice/docker.service
+           └─17592 /usr/bin/dockerd -H fd:// --containerd<span class="token operator">=</span>/run/containerd/containerd.sock
+</code></pre></div><p>配置镜像加速，打开下面的文件，如果没有创建文件：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 打开文件</span>
+<span class="token function">vi</span> /etc/docker/daemon.json
+</code></pre></div><p>填写一些内容</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;registry-mirrors&quot;</span> <span class="token builtin class-name">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;https://registry.docker-cn.com&quot;</span>,
+    <span class="token string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>,
+    <span class="token string">&quot;http://hub-mirror.c.163.com&quot;</span>,
+    <span class="token string">&quot;https://cr.console.aliyun.com/&quot;</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># 重启docker服务使配置生效</span>
+systemctl restart docker.service
+</code></pre></div><h2 id="_3-镜像命令"><a href="#_3-镜像命令" class="header-anchor">#</a> 3. 镜像命令</h2> <p>官方给了一个 <code>hello-wrld</code> 镜像，通过下面的名来安装 <code>hello-world</code> 镜像：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>docker run hello-world
+</code></pre></div><p>运行此命令后，系统从本地查找 <code>hello-world</code>  镜像文件，我们这里之前没有，所以从远程仓库去下载<code>hello-world</code> 镜像，并执行这个镜像文件。</p> <p><code>hello-world</code> 竟像在命令窗口显示 'Hello from Docker!' 字样。</p> <p>那么我们怎么查看我们安装的镜像呢？</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看本地安装的镜像文件</span>
+docker images
+</code></pre></div><p>以下的我们安装完 <code>hello-world</code> 后，查询镜像的结果，会显示包名，ID，大小等信息。</p> <div class="language-text extra-class"><pre class="language-text"><code>REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
+hello-world   latest    bf756fb1ae65   13 months ago   13.3kB
+</code></pre></div><p>我们也可以先下载镜像，之后在使用：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 下载 mysql 镜像</span>
+docker pull mysql
+
+<span class="token comment"># 指定版本下载</span>
+docker pull mysql:5.7
+</code></pre></div><p>删除镜像需要 id，id 通过 <code>docker images</code> 命令来查看 。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 要删除镜像的 id</span>
+docker rmi -f <span class="token punctuation">[</span>id<span class="token punctuation">]</span>
+<span class="token comment"># 删除所有的镜像</span>
+docker rmi -f <span class="token variable"><span class="token variable">$(</span>docker images -aq<span class="token variable">)</span></span>
+</code></pre></div><h2 id="_4-容器命令"><a href="#_4-容器命令" class="header-anchor">#</a> 4. 容器命令</h2> <p>（1）启动/停止/运行</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># docker run [可选参数] [镜像名]</span>
+docker run -d mysql
+</code></pre></div><p>参数说明：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>--name<span class="token operator">=</span><span class="token string">&quot;Name&quot;</span>         <span class="token comment"># 容器名字，比如sql1，sql2</span>
+-d                    <span class="token comment"># 后台方式运行</span>
+-it                   <span class="token comment"># 交互方式运行，比如运行一个 linux 系统，使用此命令进入</span>
+-p ip:主机端口:容器端口  <span class="token comment"># 设置端口</span>
+</code></pre></div><p>启动是创建一个容器并且运行，运行是运行已经创建了的容器</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 停止</span>
+docker stop <span class="token punctuation">[</span>容器id<span class="token punctuation">]</span>
+
+<span class="token comment"># 运行 </span>
+docker start <span class="token punctuation">[</span>容器id<span class="token punctuation">]</span> 
+
+<span class="token comment"># 重启</span>
+docker restart <span class="token punctuation">[</span>容器id<span class="token punctuation">]</span> 
+</code></pre></div><p>（2）查看当前运行的容器：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>docker <span class="token function">ps</span>
+</code></pre></div><p>（3）删除容器</p> <p>容器和镜像的概念一定要分清楚，一个容器就是运行的一个服务，一个镜像可以运行多个容器。比如安装一个 mysql 镜像，可以启动两个 mysql 容器，两个单独运行。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 删除一个容器</span>
+<span class="token comment"># 不带 -f 参数，不能删除正在运行的容器</span>
+docker <span class="token function">rm</span> -f <span class="token punctuation">[</span>容器id<span class="token punctuation">]</span> 
+
+<span class="token comment"># 删除所有容器</span>
+docker rmi -f <span class="token variable"><span class="token variable">$(</span>docker images -aq<span class="token variable">)</span></span>
+</code></pre></div><h2 id="_5-数据卷"><a href="#_5-数据卷" class="header-anchor">#</a> 5. 数据卷</h2> <p><strong>（1）什么是数据卷？</strong></p> <p>当我们在 docker 中安装数据库之后，删除了容器数据也就没了，这不是卫门想要的。</p> <p>数据卷就是解决这个问题的，数据卷是将 docker 容器中的数据映射到我们真实的环境当中。</p> <p>比如我们删除了一个 mysql 容器之后 ，数据中的数据不会一起丢失。</p> <p>这样还可以多个容器可以<strong>共享数据</strong>。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 使用</span>
+docker run -d -v <span class="token punctuation">[</span>主机目录<span class="token punctuation">]</span>:<span class="token punctuation">[</span>容器目录<span class="token punctuation">]</span> -p <span class="token number">10050</span>:8088 mysql
+</code></pre></div><p>通过 <code>-v</code> 参数来设置数据共享，<strong>容器目录里创建的文件会同步到主机目录中</strong>。</p> <p>这个很有用，比如我们需要配置 <code>nignx</code>  的文件的话。就映射到主机中，直接添加配置就可以了，容器内自动同步。</p> <p>（2）匿名挂载，具名挂载</p> <p>通过 <code>-v [主机目录]:[容器目录]</code> 格式挂载的文件叫匿名挂载</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 查看卷的对应文件:</span>
+docker volume <span class="token function">ls</span>
+</code></pre></div><p>会显示对应是 hash</p> <div class="language-bash extra-class"><pre class="language-bash"><code>DRIVER    VOLUME NAME
+<span class="token builtin class-name">local</span>     sdfakldsjflajsdlkfjlajsdflkk
+</code></pre></div><p>具名挂载的格式如下：</p> <div class="language-bash extra-class"><pre class="language-bash"><code>docker run <span class="token punctuation">[</span>名字<span class="token punctuation">]</span>:<span class="token punctuation">[</span>容器目录<span class="token punctuation">]</span>
+
+<span class="token comment"># 挂载 mysql</span>
+docker run -d -v blogSqlData:/etc/nginx
+
+<span class="token comment"># 查看具名挂载的文件</span>
+docker volume <span class="token function">ls</span>
+
+<span class="token comment"># 会显示对应是自己设置的名字</span>
+DRIVER    VOLUME NAME
+<span class="token builtin class-name">local</span>     blogSqlData
+
+<span class="token comment"># 通过名字可以找到存放位置</span>
+docker volume inspect blogSqlData
+</code></pre></div><h2 id="_6-docker-compose"><a href="#_6-docker-compose" class="header-anchor">#</a> 6. docker-compose</h2> <p>实现 docker 集群的快速编排。</p> <p>可以管理多个容器的配置，运行循序等。</p> <p>（1）安装</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 安装 docker compose</span>
+<span class="token function">curl</span> -L <span class="token string">&quot;https://github.com/docker/compose/releases/download/1.28.2/docker-compose-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> -s<span class="token variable">)</span></span>-<span class="token variable"><span class="token variable">$(</span><span class="token function">uname</span> -m<span class="token variable">)</span></span>&quot;</span> -o /usr/local/bin/docker-compose
+
+<span class="token comment"># 打开权限</span>
+<span class="token function">chmod</span> +x /usr/local/bin/docker-compose
+
+<span class="token comment"># 查看版本</span>
+docker-compose -v
+</code></pre></div><p><code>curl</code> 参数说明:</p> <ul><li><code>-L</code> : 下载地址(url)</li> <li><code>-o</code>: 把输出写到该文件中，必须输入保存文件名</li></ul> <p>（2）配置文件</p> <p>通过 docker-compose 控制多个服务，首先需要配置 一个 <code>yml</code> 文件。</p> <p>进入 <code>/home</code> 目录</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">vi</span> docker-compose.yml
+</code></pre></div><p><code>docker-compose.yml</code>文件放在那个目录都可以，最好把一个项目中所有的配置都放到一个文件中。</p> <p>添加一些配置：
+这是添加一个启动 <code>mongo</code> 的命令</p> <div class="language-yml extra-class"><pre class="language-yml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">'3'</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">mongo1</span><span class="token punctuation">:</span>               <span class="token comment"># 容器的名字</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mongo<span class="token punctuation">:</span><span class="token number">4</span>      <span class="token comment"># 使用的镜像</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>              <span class="token comment"># 映射端口</span>
+      <span class="token punctuation">-</span>10050<span class="token punctuation">:</span><span class="token number">27017</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>        <span class="token comment"># 设置用户名密码    </span>
+      <span class="token key atrule">MONGO_INITDB_ROOT_USERNAME</span><span class="token punctuation">:</span> admin
+      <span class="token key atrule">MONGO_INITDB_ROOT_PASSWORD</span><span class="token punctuation">:</span> <span class="token number">981102</span>
+</code></pre></div><p>（3）启动</p> <p>**先切换到 存放<code>docker-compose.yml</code> 文件的目录，**然后使用此命令，启动</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 启动</span>
+docker-compose up -d
+
+<span class="token comment"># 停止</span>
+docker-compose up -d
+
+<span class="token comment"># 删除</span>
+docker-compose <span class="token function">rm</span>
+
+<span class="token comment"># 查看运行的容器</span>
+docker-compose <span class="token function">ps</span>
+</code></pre></div><h2 id="_7-进入容器-拷贝文件"><a href="#_7-进入容器-拷贝文件" class="header-anchor">#</a> 7. 进入容器，拷贝文件</h2> <p>（1）进入容器</p> <p>进入 docker 容器就是，比如我们安装一个 MongoDB 数据库容器，用命令行进入容器内，进行<strong>查看数据，查看文件存放那根目录，修改配置</strong>等操作。</p> <p>先使用 <code>docker ps</code>  查看要进入的容器的id 。</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 进入容器(打开新窗口)</span>
+docker <span class="token builtin class-name">exec</span> -it <span class="token punctuation">[</span>容器id<span class="token punctuation">]</span> <span class="token function">bash</span>
+
+<span class="token comment"># 打开正在后台运行的端口 </span>
+docker attach <span class="token punctuation">[</span>容器id<span class="token punctuation">]</span>
+
+<span class="token comment"># 退出容器</span>
+<span class="token builtin class-name">exit</span>
+</code></pre></div><p>参数说明：</p> <ul><li><code>-it</code> ：使用交互模式</li> <li><code>bash</code>：使用终端打开</li></ul> <p>（2）拷贝文件</p> <p>拷贝文件是，将 docker <strong>容器中的文件拷贝到主机上</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 在容器外部操作</span>
+docker <span class="token function">cp</span> 容器id:容器内路径 目的主机路径
+</code></pre></div><h2 id="_8-docker-仓库"><a href="#_8-docker-仓库" class="header-anchor">#</a> 8. docker 仓库</h2> <p>先到 docker hub 注册账号之后，安装docker 的服务器上登录：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 登录</span>
+docker login
+
+<span class="token comment"># 提交本地本地文件</span>
+docker commit <span class="token punctuation">[</span>comtainer id<span class="token punctuation">]</span> lw96/msql:1.0
+</code></pre></div><h2 id="_9、卸载-docker-容器"><a href="#_9、卸载-docker-容器" class="header-anchor">#</a> 9、卸载 docker 容器</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 卸载安装包</span>
+yum remove docker-ce docker-ce-cli containerd.io
+
+<span class="token comment"># 删除资源</span>
+<span class="token function">rm</span> -rf /var/lib/docker
+
+<span class="token comment"># 资源放置目录 /var/lib/docker</span>
+</code></pre></div><div class="gitalk-container"><div id="gitalk-container"></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">12/28/2021, 2:29:35 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/other/nginx.html" class="prev">
+        Nginx 基本使用
+      </a></span> <span class="next"><a href="/docs/other/opencource.html">
+        如何做开源项目
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.8b7e38aa.js" defer></script><script src="/docs/assets/js/2.8fb7c0a3.js" defer></script><script src="/docs/assets/js/132.4428187f.js" defer></script><script src="/docs/assets/js/6.521866e2.js" defer></script>
+  </body>
+</html>
